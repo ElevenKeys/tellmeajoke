@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<title>糗事百科</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+	<ul class="container">
+		{% for entry in entries %}
+		<li>
+			<div class="author">
+				{{ entry.author }}
+			</div>
+			<div class="text">
+				{{ entry.text|safe }}
+			</div>
+			<div class="like">
+				<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+				{{ entry.like }}
+			</div>
+		</li>
+		{% endfor %}
+	</div>
+
+	<script src="//use.fontawesome.com/f17af8c9b5.js"></script>
+</body>

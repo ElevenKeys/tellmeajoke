@@ -1,0 +1,30 @@
+.body {
+	font-family: "source-sans-pro",sans-serif;
+}
+.container {
+	max-width: 47.5em;
+	margin: 0 auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin-bottom: 12px
+}
+
+.author {
+	font-size: 1.125rem;
+}
+
+.text {
+	font-size: 0.875rem;
+}
+
+.like {
+	margin-top: 3px;
+	color: gray;
+	font-size: 0.7rem
+}
