@@ -16,7 +16,7 @@ site = spider.Qiushibaike()
 @app.route('/<int:id>')
 def page(id=1):
     global site
-    return render_template('index.html',entries=site.getPageItems(id))
+    return render_template('index.html',entries=site.parse(id))
 
 @app.route('/')
 def index():
